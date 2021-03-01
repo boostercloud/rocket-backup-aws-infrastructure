@@ -43,7 +43,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
 
-      - run: npm run install
+      - run: npm install
       - run: npm run compile
 
       # Discard all changes that might have occurred after bootstrap
@@ -68,3 +68,4 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_ACTION }}
+          USE_NPM: true
