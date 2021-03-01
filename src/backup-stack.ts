@@ -31,7 +31,7 @@ export class BackupStack {
       }
     } else {
       throw Error(
-        '[Rocket][Backup] - backupType parameter is missing or is not supported. The available backup types are ON_DEMAND and POINT_IN_TIME.'
+        '[Rocket][Backup] - backupType parameter is missing or is not supported. The available backup types are ON_DEMAND and POINT_IN_TIME'
       )
     }
   }
