@@ -21,7 +21,7 @@ jobs:
           DATA: ${{ toJson(github.event.head_commit) }}
       - uses: actions/checkout@v2-beta
         with:
-          token: ${{ secrets.GITHUB_TOKEN_ACTION }}
+          token: ${{ secrets.GH_TOKEN_ACTION }}
 
       # Workaround for https://github.com/actions/checkout/issues/6#issuecomment-520636057
       - name: Prepare repository
@@ -36,7 +36,7 @@ jobs:
           git config --local user.name "GITHUBACTION"
         env:
           USER_NAME: ${{ secrets.DEPLOYING_USER_NAME }}
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN_ACTION }} # Token for pushing
+          GITHUB_PAT: ${{ secrets.GH_TOKEN_ACTION }} # Token for pushing
 
       - uses: actions/setup-node@main
         with:
@@ -67,5 +67,5 @@ jobs:
       - uses: theam/actions/lerna-semantic-publish@master
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_ACTION }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_ACTION }}
           USE_NPM: true
