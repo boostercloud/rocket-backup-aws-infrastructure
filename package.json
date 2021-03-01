@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boostercloud/booster.git"
+    "url": "git+https://github.com/boostercloud/rocket-backup-aws-infrastructure.git"
   },
   "dependencies": {
     "@aws-cdk/aws-backup": "1.67.0",
