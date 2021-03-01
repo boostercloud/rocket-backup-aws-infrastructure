@@ -7,7 +7,7 @@ import { Table } from '@aws-cdk/aws-dynamodb'
 import * as PointInTimeRecoveryUtils from '../src/utils/point-in-time-recovery'
 import * as OnDemandUtils from '../src/utils/on-demand'
 import { generateDynamoDBTable } from './utils/resource-generator'
-import { expect } from '@boostercloud/framework-types/test/expect'
+import { expect } from './utils/expect'
 
 describe('Backup stack', () => {
   const config = new BoosterConfig('test')

@@ -6,7 +6,7 @@ import * as OnDemandUtils from '../../src/utils/on-demand'
 import { generateDynamoDBTable } from './resource-generator'
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { spy, restore } from 'sinon'
-import { expect } from '@boostercloud/framework-types/test/expect'
+import { expect } from './expect'
 
 describe('On demand utils', () => {
   const config = new BoosterConfig('test')

@@ -3,7 +3,7 @@ import { App, Stack, StackProps } from '@aws-cdk/core'
 import { Table } from '@aws-cdk/aws-dynamodb'
 import { applyPointInTimeRecoveryBackup } from '../../src/utils/point-in-time-recovery'
 import { generateDynamoDBTable } from './resource-generator'
-import { expect } from '@boostercloud/framework-types/test/expect'
+import { expect } from './expect'
 
 describe('Point in time recovery utils', () => {
   const config = new BoosterConfig('test')
