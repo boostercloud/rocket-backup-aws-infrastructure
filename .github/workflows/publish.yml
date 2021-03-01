@@ -43,7 +43,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
 
-      - run: npm install
+      - run: npm ci
       - run: npm run compile
 
       # Discard all changes that might have occurred after bootstrap
