@@ -1,6 +1,6 @@
 {
   "name": "@boostercloud/rocket-backup-aws-infrastructure",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Booster rocket to backup event stores on your current Booster applications.",
   "keywords": [
     "Booster",
@@ -41,8 +41,8 @@
     "url": "https://github.com/boostercloud/booster/issues"
   },
   "devDependencies": {
-    "@boostercloud/framework-provider-aws-infrastructure": "^0.11.4",
-    "@boostercloud/framework-types": "^0.11.4",
+    "@boostercloud/framework-provider-aws-infrastructure": "^0.15.1",
+    "@boostercloud/framework-types": "^0.15.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/npm": "^7.0.10",
     "@types/chai": "^4.2.15",
